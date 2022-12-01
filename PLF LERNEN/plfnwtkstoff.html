@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        h1 {text-align: center; font-size: 3em; font-family: Arial, Helvetica, sans-serif;}
+        h2 { font-size: 2.5em; font-family: Arial, Helvetica, sans-serif;}
+        p {color: white; font-family: Arial, Helvetica, sans-serif; font-size: 1.2em;}
+
+        #footerRouter {background-color: grey;}
+
+    </style>
+
+    <title>NWTK Stoff</title>
+</head>
+<body>
+    
+    <h1>NWTK STOFF</h1>
+
+    <h2>Basic Rooter Commands:</h2>
+
+    <footer id="footerRouter">
+        <p>User EXEC mode | exit: <br>
+        Router> <br>
+         Router> ? <br> Router> enable (oder en)
+        </p>
+
+        <p>---------------------------------------------------------</p>
+ <p>Privileged EXEC mode | disable, exit: <br>
+        Router<strong>#</strong>
+        <br>   Router# ?</p>
+
+        <p>---------------------------------------------------------</p>
+        <p>Global Config mode | exit, end, Ctrl+C, Ctrl+Z:
+            <br> Router# configure terminal <br>Router(config)# <br>Router(config)# ?
+        </p>
+
+        <p>---------------------------------------------------------</p>
+        <p>Line configuration mode | exit, end, Ctrl+C, Ctrl+Z: <br>
+        Router(config)# line vty 0 15 <br>
+         Router(config)# line console 0 <br>
+        Router(config-line)# <br>
+        Router(config-line)# ? </p>
+         </p>
+
+        <p>---------------------------------------------------------</p>
+         <p>Interface configuration mode | exit, end, Ctrl+C, Ctrl+z: <br>
+        Router(config)# interface gigabitEthernet 0/0/0 <br>
+        Router(config-if)# <br>
+        Router(config-if)# ?</p>
+        </p>
+      </p>
+
+      <p>---------------------------------------------------------</p>
+      <p>Router# <br>
+        Router# configure terminal (oder config t) <br>
+        Router# show ? <br>
+        Router# show running-config <br>
+        Router# copy running-config startup-config <br>
+        Router# ping 192.168.1.100 <br>
+        Router# traceroute 192.168.1.100 <br>
+        Router# ssh 192.168.1.100 <br>
+        Router# telnet 192.168.1.100 <br>
+        Router# debug ? <br>
+        Router# clock set 07:14:00 October 15 2019 <br>
+        Router# reload</p>
+
+      <p>---------------------------------------------------------</p>
+        <p>Router(conf)# <br>
+        Router(conf)# hostname R1 (statt R1 kann auch etwas anderes sein) <br>
+        Router(conf)# banner motd "No unauthorized access allowed!" (in " " kann auch etwas anderes stehen) <br>
+        Router(conf)# enable password class (class ist jetzt password) <br>
+        Router(conf)# service password-encryption (password wird verschlüsselt) <br>
+        Router(config)# line vty 0 15 <br>
+        Router(config) line console 0 <br> 
+        Router(config) interface gigabitEthernet 0/0/0</p>
+        </p>
+
+      <p>---------------------------------------------------------</p>
+        <p>
+            Router(config-line)# <br>
+            Router(config-line)# password cisco (cisco ist jetzt password) <br>
+            Router(config-line)# login <br>
+            Router(config-line)# transport input all (line vty) </p>
+            </p>
+            </p>
+         </p>
+
+      <p>---------------------------------------------------------</p>
+         <p> //command abbrevation: <br>
+            Router(config-if)# <br>
+            Router(config-if)# interface gigabitEthernet 0/0/0
+            Router(config-if)# int g0/0 <br>
+            Router(config-if)# ip address 192.168.1.1 255.255.255.0 <br>
+            Router(config-if)# no shutdown
+  
+            </p>
+
+    </footer>
+
+</body>
+</html>
